@@ -20,10 +20,10 @@ app.use(passport.session());  // use session
 passport.serializeUser((user, cb) => cb(null, user));
 passport.deserializeUser((user, cb) => cb(null, user));
 passport.use(new WebAppStrategy({ // WebAppStragegy is passport Strategy 
-  tenantId: "fa5ca1dd-eed7-4460-b4d4-750f7a624e01",
-  clientId: "2d83374f-0d81-4c42-988f-bb4765e130e7",
-  secret: "NmJjYWIxZmEtZDMyNS00YjU3LWI1YmItMTE2ZjU5ZTVkZTE2",
-  oauthServerUrl: "https://jp-tok.appid.cloud.ibm.com/oauth/v4/fa5ca1dd-eed7-4460-b4d4-750f7a624e01",
+  tenantId: "xxxxxxxx-xxxx-4460-xxxx-750f7a624e01",
+  clientId: "xxxxxxxx-xxxx-4c42-xxxx-bb4765e130e7",
+  secret: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  oauthServerUrl: "https://jp-tok.appid.cloud.ibm.com/oauth/v4/xxxxxxxxxx",
   redirectUri: "http://localhost:3000/appid/callback"
 }));
 
